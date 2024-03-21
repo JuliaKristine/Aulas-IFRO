@@ -1,0 +1,10 @@
+li{
+  border: 2px rgb(0, 0, 0) solid;
+  width: 400px;
+}
+#ul1{
+  list-style-type: square;
+}
+ol{
+  list-style-type: upper-roman;
+}

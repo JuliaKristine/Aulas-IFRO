@@ -1,0 +1,33 @@
+div{
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  border: 5px black dashed;
+}
+#div1{
+  background-color: yellow;
+}
+#div2{
+  background-color: #c1a4cd;
+  background-clip: padding-box;
+}
+#div3{
+  background-image: url("images.jfif");
+background-repeat: no-repeat;
+}
+#div4{
+  background-image: url("74fda4d0ba29f77d28d10d8a5ad35b20.jpg");
+  background-repeat: no-repeat;
+  background-size: border-box;
+}
+#div5{
+  background-image: url("images.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body{
+  background-image: url("hand-drawn-trendy-cartoon-pattern-design_52683-72101.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+}
