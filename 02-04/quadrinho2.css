@@ -1,0 +1,92 @@
+.container{
+  row-gap: 20px;
+  column-gap: 20px;
+  column-gap: 20px;
+  background-color: #f9eac3;
+  padding: 16px;
+  height: 630px;
+}
+a{
+  text-decoration: none;
+}
+p{
+  text-decoration: none;
+  text-align: center;
+}
+.p1{
+  text-decoration: none;
+  text-align: center;
+  width: 450px;
+}
+.logo{
+  justify-content: space-between;
+  display: flex;
+  padding: 23px;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #c6d8f0;
+}
+.flex > div{
+  flex: 1 1 200px;
+  margin: 10px 0;
+}
+.ban{
+  flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #d8bfd8;
+}
+.in{
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #ff9999;
+}
+.up > div{
+  flex: 1 10 200px;
+  gap: 150px;
+}
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.box1{
+  padding: 1px;
+  flex-grow: 1;
+  background-color: #c6d8f0;
+  height: 300px;
+  grid-area: box1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box2{
+  padding: 1px;
+  flex-grow: 1;
+  background-color: #d8bfd8;
+  height: 300px;
+  grid-area: box2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box3{
+  padding: 1px;
+  flex-grow: 1;
+  background-color: #ff9999;
+  height: 300px;
+  grid-area: box3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foo{
+  flex-wrap: wrap;
+  padding: 1px;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #ff9999;
+}
