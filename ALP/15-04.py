@@ -163,14 +163,14 @@ app.grid_rowconfigure(1, weight=6)
 
 app.grid_columnconfigure(0, weight=1)
 
-frame = LabelFrame(app, text='Cadastro', borderwidth=1, relief='solid', background='E0F2F7')
+frame = LabelFrame(app, text='Cadastro', borderwidth=1, relief='solid', background='#E0F2F7')
 frame.grid(row=0, column=0, sticky='NSEW', padx=3, pady=3)
 
 frame.bind('<Configure>', resize_font)
 
 font = tkFont.Font(size=18)
 
-label = Label(frame, text='Digite um Nome:', font=font, background='E0F2F7')
+label = Label(frame, text='Digite um Nome:', font=font, background='#E0F2F7')
 label.grid(row=0, column=0, sticky='W', padx=(3, 20))
 
 entry = Entry(frame, font=font)
