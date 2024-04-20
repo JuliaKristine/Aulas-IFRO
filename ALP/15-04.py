@@ -179,7 +179,7 @@ entry.grid(row=0, column=1, sticky='EW', padx=(10))
 submit_button = Button(frame, text='Adicionar', command=adicionar, font=font)
 submit_button.grid(row=1, column=1, sticky='S', pady=10)
 
-display_label = Label(frame, text='', font=font, background='white')
+display_label = Label(frame, text='', font=font, background='#E0F2F7')
 display_label.grid(row=2, column=0, columnspan=2, sticky='W', padx=3)
 
 frame.grid_columnconfigure(1, weight=1)
