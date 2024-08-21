@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <!-- Nome -->
+            <div class="inputBox">
+                <label for="nome" class="labelInput">Digite seu Nome:</label>
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+            </div>
+
+            <!-- Senha -->
+            <div class="inputBox">
+                <label for="senha" class="labelInput">Senha:</label>
+                <input type="password" id="senha" name="senha">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="mostrar_senha" onclick="togglePasswordVisibility('senha', 'mostrar_senha')">
+                    <label for="mostrar_senha">Mostrar senha</label>
+                </div>
+            </div>
+
+            <!-- Confirmar Senha -->
+            <div class="inputBox">
+                <label for="confirma_senha" class="labelInput">Confirmar Senha:</label>
+                <input type="password" id="confirma_senha" name="confirma_senha">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="mostrar_confirma_senha" onclick="togglePasswordVisibility('confirma_senha', 'mostrar_confirma_senha')">
+                    <label for="mostrar_confirma_senha">Mostrar senha</label>
+                </div>
+            </div>
+
+            <!-- Telefone -->
+            <div class="inputBox">
+                <label for="telefone" class="labelInput">(69) 9 9999-9999</label>
+                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+            </div>
+
+            <!-- Aperitivo -->
+            <div class="form-check">
+                <label class="form-check-label">Aperitivo?</label>
+                <input class="form-check-input" type="checkbox" id="aperitivo" name="aperitivo" value="something" checked>
+            </div>
+
+            <!-- Sexo -->
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+            </fieldset>
+
+            <!-- Mensagem -->
+            <div class="inputBox">
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg"></textarea>
+            </div>
+
+            <!-- Estado -->
+            <div class="inputBox">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <!-- Botão de Enviar -->
+            <div class="inputBox">
+                <input type="submit" name="submit" id="submit" value="Enviar">
+            </div>
+        </form>
+
+        <script>
+            function togglePasswordVisibility(passwordId, checkboxId) {
+                var passwordField = document.getElementById(passwordId);
+                var checkbox = document.getElementById(checkboxId);
+                passwordField.type = checkbox.checked ? 'text' : 'password';
+            }
+        </script>
+    </div>
+</body>
+</html>
