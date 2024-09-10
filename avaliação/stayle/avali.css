@@ -179,9 +179,9 @@ button:hover {
 footer {
   background: #ba456a;
   color: #fff;
-  padding: 0.625rem 0;
+  padding: 0.625rem ;
   text-align: center;
-  margin-top: 1.25rem;
+  margin-top: 50px;
 }
 
 @media (min-width: 600px) {
