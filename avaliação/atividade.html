@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicação Educativa</title>
+<link rel="stylesheet" href="stayle/avali.css">
+</head>
+<body>
+<header>
+    <h1>Aplicação Educativa</h1>
+    <nav>
+        <a href="avaliacao.html">Voltar à Página Inicial</a>
+    </nav>
+</header>
+
+<section id="app">
+    <h2>Jogo Educativo</h2>
+    <p>Esta é uma aplicação educativa. Aqui você pode explorar e aprender.</p>
+</section>
+
+<div class="container">
+    <h1>Pinte a Palavra Correta</h1>
+
+    <div class="title">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome do aluno" required>
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+    </div>
+
+    <div class="instruction">
+        <p>Celecione uma cor e pinte a Palavra Correta:</p>
+    </div>
+
+    <div class="palette">
+        <div class="color-box" style="background-color: #ff8686be;" id="red"></div>
+        <div class="color-box" style="background-color: #7c7cf7;" id="blue"></div>
+        <div class="color-box" style="background-color: #54ff545e;" id="green"></div>
+        <div class="color-box" style="background-color: rgb(248, 248, 110);" id="yellow"></div>
+    </div>
+
+    <div class="exercise">
+        <div class="image">
+            <img src="imagens/vaca.png" alt="vaca">
+            <div class="options">
+                <div class="option" data-answer="vala">vala</div>
+                <div class="option" data-answer="vela">vela</div>
+                <div class="option" data-answer="vaca">vaca</div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="imagens/gato.png" alt="gato">
+            <div class="options">
+                <div class="option" data-answer="gato">gato</div>
+                <div class="option" data-answer="gota">gota</div>
+                <div class="option" data-answer="guto">guto</div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="imagens/bolo.png" alt="bolo">
+            <div class="options">
+                <div class="option" data-answer="bola">bola</div>
+                <div class="option" data-answer="bolo">bolo</div>
+                <div class="option" data-answer="balo">balo</div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="imagens/bola.png" alt="bola">
+            <div class="options">
+                <div class="option" data-answer="boca">boca</div>
+                <div class="option" data-answer="bola">bola</div>
+                <div class="option" data-answer="bala">bala</div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="imagens/abelha.png" alt="abelha">
+            <div class="options">
+                <div class="option" data-answer="abela">abela</div>
+                <div class="option" data-answer="abaixo">abaixo</div>
+                <div class="option" data-answer="abelha">abelha</div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="imagens/cama.png" alt="cama">
+            <div class="options">
+                <div class="option" data-answer="dama">dama</div>
+                <div class="option" data-answer="cama">cama</div>
+                <div class="option" data-answer="coma">coma</div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="imagens/botao.png" alt="botão">
+            <div class="options">
+                <div class="option" data-answer="balão">balão</div>
+                <div class="option" data-answer="botão">botão</div>
+                <div class="option" data-answer="bocão">bocão</div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="imagens/sino.png" alt="sino">
+            <div class="options">
+                <div class="option" data-answer="vino">vino</div>
+                <div class="option" data-answer="tino">tino</div>
+                <div class="option" data-answer="sino">sino</div>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="imagens/boneca.png" alt="boneca">
+            <div class="options">
+                <div class="option" data-answer="janela">janela</div>
+                <div class="option" data-answer="boneca">boneca</div>
+                <div class="option" data-answer="boleca">boleca</div>
+            </div>
+        </div>
+    </div>
+    <button id="submitBtn">Submeter</button>
+</div>
+
+<footer>
+    <p>&copy; 2024 Julia Kristine</p>
+</footer>
+<script src="script/avali.js"></script>
+</body>
+</html>
